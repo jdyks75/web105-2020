@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Combined Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* custom styles here! */
+        /* ROWS ARE CRITICAL! THEY RESET THE FLOW OF THE PAGE!!! */
+
+        body {
+            font-family: verdana, sans-serif;
+            background: #8b6d53;
+            background-repeat: no-repeat;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+
+        }
+
+        /* For mobile phones: */
+
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 630px) {
+
+            /* For tablets: */
+
+            body {
+                font-family: verdana, sans-serif;
+                background: #8b6d53;
+                background-repeat: no-repeat;
+            }
+
+            .col-m-1 {
+                width: 8.33%;
+            }
+
+            .col-m-2 {
+                width: 16.66%;
+            }
+
+            .col-m-3 {
+                width: 25%;
+            }
+
+            .col-m-4 {
+                width: 33.33%;
+            }
+
+            .col-m-5 {
+                width: 41.66%;
+            }
+
+            .col-m-6 {
+                width: 50%;
+            }
+
+            .col-m-7 {
+                width: 58.33%;
+            }
+
+            .col-m-8 {
+                width: 66.66%;
+            }
+
+            .col-m-9 {
+                width: 75%;
+            }
+
+            .col-m-10 {
+                width: 83.33%;
+            }
+
+            .col-m-11 {
+                width: 91.66%;
+            }
+
+            .col-m-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+
+            /* For desktop: */
+
+            body {
+                background-image: url("http://jdykstra124.mccdgm.net/web105/responsive-media/utah-background.jpg");
+                background-repeat: no-repeat;
+                background-position: top;
+                background-size: 300%;
+            }
+
+
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+            #left-nav {
+                padding-left: 4%;
+            }
+
+            #right-nav {
+                padding-right: 4%;
+            }
+        }
+    </style>
+</head>
+
+<!-- all pictures are from Pixabay -->
+
+<body>
+    <header>
+        <h1>Utah</h1>
+    </header>
+
+    <p>&nbsp;</p>
+
+    <div class="container">
+        <nav>
+            <div><a href="index.html">Home</a> </div>
+        </nav>
+        <main>
+            <div class="row">
+                <div class="col-6 col-m-7"> <img src="http://jdykstra124.mccdgm.net/web105/responsive-media/utah.jpg" alt="Utah"> </div>
+                <div class="col-6 col-m-5">
+
+                    <h2>Known the world over, Utah’s 100-mile White Rim Trail in Canyonlands National Park comes on like
+                        a natural
+                        rollercoaster, looping in and out of a multi-colored array of spires, arches, buttes, and mesas
+                        carved by the Green and
+                        Colorado Rivers.</h2>
+
+                    <p>&nbsp;</p>
+                    <p> But the added value of Canyonlands is its staggering remoteness. The closest light bulb hangs at
+                        least 50-miles away.
+                        Our returning guests relate that it’s this great sense of solitude, along with the fantastic
+                        camping opportunities, that
+                        brings them back.
+                    </p>
+                    <p>&nbsp;</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <!-- end row -->
+
+
+            <div class="row">
+                <div class="col-6 col-m-4">
+                    <!-- https://escapeadventures.com/tour/utah-white-rim-mountain-bike-tour/ -->
+                    <h2>The White Rim Trail</h2>
+
+                    <p>A primitive trail framed by blooming cacti below, and snow-capped mountains above, the White Rim
+                        Trail descends a series
+                        of beguiling slickrock outcrops to its namesake, a unique sandstone pedestal. We spend much of
+                        our trip riding this
+                        famous off-road route and detour briefly to admire the natural landmarks, the cool Colorado
+                        River, and the rock platform
+                        vistas.</p>
+
+                    <p>En route we gain a deeper, more personal appreciation for the native people who called this place
+                        home as we experience
+                        their beautiful, but harsh, desert home. While enjoying the beauty of the nature that surrounds
+                        us, we also appreciate
+                        the modern amenities a guided trip provides; with our custom support truck and attentive guides,
+                        you’ll feel right at
+                        home in this remote desert.</p>
+
+                    <p>ignature switchback trails set against the great Utah outback means a trip you’ll savor for
+                        years.</p>
+
+                    <p>&nbsp;</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="col-6 col-m-8"><img src="http://jdykstra124.mccdgm.net/web105/responsive-media/arizona-background.jpg" alt="singletrack"></div>
+            </div>
+            <!-- end row-->
+            <div class="row">
+                <div class="col-4 col-m-4">
+                    <!-- https://escapeadventures.com/tour/utah-white-rim-mountain-bike-tour/ -->
+                    <h2>Moab, UT</h2>
+
+                    <h2>America’s newest National Monument—despite its contested status—cradles some of North America’s
+                        most ancient
+                        civilizations.</h2>
+                    <p>&nbsp;</p>
+
+
+                    <p>For some, the default image of Utah’s southern tier reaches back to the raw and open American
+                        frontier, the hard to
+                        settle Interior West. For others, it speaks of the mystical lives of bygone, primeval
+                        civilizations. Fast forward now:
+                        to the feel of a nurturing sun at your back. Before you, at distance, snow-capped mountains loom
+                        with an almost palpable
+                        majesty. Welcome to the Abajo Mountains!</p>
+                    <p>&nbsp;</p>
+                    <p>A 1.3-million acre Bears Ears National Monument, created by President Obama in 2016—reduced by
+                        85% two years
+                        later—covers a broad expanse of red rock, juniper forests, high plateau, cultural, historic and
+                        prehistoric legacy. The
+                        latter includes an abundance of very early human, as well as Native American historical
+                        artifacts left behind by the
+                        first wave of Clovis people, followed by the Ancestral Puebloans, Fremont culture and others.
+                    </p>
+                </div>
+                <div class="col-4 col-m-4"> <img src="http://jdykstra124.mccdgm.net/web105/responsive-media/desert-sunset.jpg" alt="Sunset"> </div>
+                <div class="col-4 col-m-4">
+
+                    <!-- https://escapeadventures.com/tour/utah-white-rim-mountain-bike-tour/ -->
+
+                    <p>A pair of monumental 2,000-ft twin buttes, the Bears Ears is the remarkable remnant of
+                        200-million year old sand dunes.
+                        Capped in shades of pale orange to light red sandstone, The Bears Ears formation is so
+                        distinctive they can be seen,
+                        even at great distance, from nearly every direction. Framed by Dark Canyon Wilderness and the
+                        Beef Basin to the west,
+                        Comb Ridge on the east, the Grand Gulch Plateau and Cedar Mesa to the south and Canyonlands
+                        National Park to the north,
+                        our mountain bike tour takes you through the most unique and historical landmarks southeast Utah
+                        has to offer.</p>
+                    <p>From a start at Edge of the Cedars Museum in Blanding, Utah, (pop. 3375) a 19th century Mormon
+                        settlement an hour’s
+                        south of Moab and Arches National Park, we climb high into the Abajo Mountains. Our ride
+                        throughout the week visits not
+                        only plentiful archaeological sites, but also many high mountain meadows and forests. We visit
+                        gorgeous locales, such as
+                        The Notch, Duck Lake, Sego Flat, Reef of Rocks, Maverick Point Overlook, Skull and Crossbones,
+                        The Causeway, and Jackson
+                        Ridge. Wildlife is abundant atop the Abajos, herds of mule deer bounding through spans of trees
+                        while raptors dart and
+                        soar overhead. During the day, views atop the Abajo Mountains extend for 75-miles in any
+                        direction. At night, the
+                        crystal clear skies are so bright they recast the Milky Way as near endless if not impossibly
+                        dense with stars.</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <!-- end row -->
+        </main>
+        <footer class="row">
+            <div>
+                <h3> &copy; Jon Dykstra 2020 </h3>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
