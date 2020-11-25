@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Combined Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* custom styles here! */
+        /* ROWS ARE CRITICAL! THEY RESET THE FLOW OF THE PAGE!!! */
+
+        body {
+            font-family: verdana, sans-serif;
+            background-image: url("http://jdykstra124.mccdgm.net/web105/responsive-media/arizona.jpg");
+            background-size: 200%;
+            background-repeat: no-repeat;
+        }
+
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+
+        }
+
+        /* For mobile phones: */
+
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 630px) {
+
+            /* For tablets: */
+
+            .col-m-1 {
+                width: 8.33%;
+            }
+
+            .col-m-2 {
+                width: 16.66%;
+            }
+
+            .col-m-3 {
+                width: 25%;
+            }
+
+            .col-m-4 {
+                width: 33.33%;
+            }
+
+            .col-m-5 {
+                width: 41.66%;
+            }
+
+            .col-m-6 {
+                width: 50%;
+            }
+
+            .col-m-7 {
+                width: 58.33%;
+            }
+
+            .col-m-8 {
+                width: 66.66%;
+            }
+
+            .col-m-9 {
+                width: 75%;
+            }
+
+            .col-m-10 {
+                width: 83.33%;
+            }
+
+            .col-m-11 {
+                width: 91.66%;
+            }
+
+            .col-m-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+
+            /* For desktop: */
+
+
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+            #left-nav {
+                padding-left: 4%;
+            }
+
+            #right-nav {
+                padding-right: 4%;
+            }
+        }
+    </style>
+</head>
+
+<!-- all pictures are from Pixabay -->
+
+<body>
+    <header>
+        <h1>MTB Adventures</h1>
+    </header>
+
+    <div class="container">
+        <h2>Whether you are the avid adventurist, The hard core athlete, or The weekend warrior with the kids. We have a
+            destination and tour guide for you.</h2>
+
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
+
+        <p>You don't have to be the best rider. Or the strongest athlete out there. To enjoy the
+            great outdoors.</p>
+    </div>
+
+    <p>&nbsp;</p>
+    <div class="container">
+        <nav>
+            <div class="col-4 col-m-4"><a href="utah.html">Utah</a> </div>
+            <div class="col-4 col-m-4"><a href="arizona.html">Arizona</a> </div>
+            <div class="col-4 col-m-4"><a href="colorado.html">Colorado</a></div>
+        </nav>
+        <main>
+            <div class="row">
+
+                <div class="col-6 col-m-5">
+                    <!-- https://www.westernspirit.com/ -->
+                    <h2>With over 50+ trips around the United States, MTB Adventures is North America's premier mountain
+                        bike outfitter.</h2>
+                    <p>&nbsp;</p>
+                    <p> From mellow rides around hot springs to five days above 10,000 feet, we have options for riders
+                        of all types. Since 2020 we have been helping people get outside, experience the pure magic of
+                        the great outdoors, and
+                        achieve their destination mountain biking dreams.
+                    </p>
+                    <p>&nbsp;</p>
+
+                    <p>
+                    <p>&nbsp;</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="col-6 col-m-7"> <img
+                        src="http://jdykstra124.mccdgm.net/web105/responsive-media/colorado.JPG" alt="Biking"> </div>
+            </div>
+            <!-- end row -->
+
+
+            <div class="row">
+                <div class="col-6 col-m-4">
+                    <!-- https://www.westernspirit.com/ -->
+                    <h2>You could use a nature fix...</h2>
+                    <p>The evidence is everywhere. You need to get outside for a minimum of 3 days. Sure that afternoon
+                        hike or weekend ride is
+                        beneficial, but the real magic happens when you actually live outside for at least three days. A
+                        trip to the backcountry
+                        can do wonders for both body and soul!</p>
+
+
+
+                    <p>&nbsp;</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="col-6 col-m-8">
+
+                    <h2>Location Is Everything</h2>
+
+                    <p>
+                        On MTB Adventures bike trips we make it possible for you get out there, really out there, away
+                        from the crowds. The
+                        views, the sunsets, the peace, will all work their magic.</p>
+                </div>
+            </div>
+            <!-- end row-->
+            <div class="row">
+                <div class="col-4 col-m-4">
+                    <!-- https://www.westernspirit.com/ -->
+                    <h2>Your Kind Of Riding
+                    </h2>
+                    <p>&nbsp;</p>
+
+
+                    <p>If you crave singletrack, we’ve got it. If you want to see the best part of our National Parks
+                        via cruisey dirt roads
+                        and fun easy trails, we’ve got that too.</p>
+                    <p>&nbsp;</p>
+
+                </div>
+                <div class="col-4 col-m-4"> <img src="http://jdykstra124.mccdgm.net/web105/responsive-media/food.jpg"
+                        alt="Food"> </div>
+                <div class="col-4 col-m-4">
+
+                    <!-- https://www.westernspirit.com/ -->
+                    <h2>Our Guides Can Really Cook</h2>
+                    <p>&nbsp;</p>
+                    <p>Yummy appetizers followed by Dutch oven dinners and fresh salads. And you have definitely earned
+                        dessert!</p>
+                    <p>&nbsp;</p>
+                    <h2>Healthy, Natural, Abundant
+                    </h2>
+                    <p>&nbsp;</p>
+
+                    <p>We take care of all the planning and the packing, so poof!— after a great ride there will be
+                        great food.</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <!-- end row -->
+        </main>
+        <footer class="row">
+            <div>
+                <h3> &copy; Jon Dykstra 2020 </h3>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
