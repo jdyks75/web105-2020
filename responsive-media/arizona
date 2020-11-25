@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Combined Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* custom styles here! */
+        /* ROWS ARE CRITICAL! THEY RESET THE FLOW OF THE PAGE!!! */
+
+        body {
+            font-family: verdana, sans-serif;
+            background: #7a7e99;
+            background-repeat: no-repeat;
+        }
+
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+
+        }
+
+        /* For mobile phones: */
+
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 630px) {
+
+            /* For tablets: */
+            body {
+                background: #7a7e99;
+            }
+
+            .col-m-1 {
+                width: 8.33%;
+            }
+
+            .col-m-2 {
+                width: 16.66%;
+            }
+
+            .col-m-3 {
+                width: 25%;
+            }
+
+            .col-m-4 {
+                width: 33.33%;
+            }
+
+            .col-m-5 {
+                width: 41.66%;
+            }
+
+            .col-m-6 {
+                width: 50%;
+            }
+
+            .col-m-7 {
+                width: 58.33%;
+            }
+
+            .col-m-8 {
+                width: 66.66%;
+            }
+
+            .col-m-9 {
+                width: 75%;
+            }
+
+            .col-m-10 {
+                width: 83.33%;
+            }
+
+            .col-m-11 {
+                width: 91.66%;
+            }
+
+            .col-m-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+
+            /* For desktop: */
+            body {
+                background-image: url("http://jdykstra124.mccdgm.net/web105/responsive-media/arizona-background.jpg");
+                background-repeat: no-repeat;
+                background-position: top;
+                background-size: 250%;
+            }
+
+
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+            #left-nav {
+                padding-left: 4%;
+            }
+
+            #right-nav {
+                padding-right: 4%;
+            }
+        }
+    </style>
+</head>
+
+<!-- all pictures are from pixabay -->
+
+<body>
+
+    <header>
+        <h1>Arizona</h1>
+    </header>
+
+    <div class="container">
+
+
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <nav>
+            <div><a href="index.html">Home</a> </div>
+        </nav>
+        <main>
+            <div class="row">
+                <div class="col-6 col-m-7"> <img src="http://jdykstra124.mccdgm.net/web105/responsive-media/arizona.jpg" alt="Arizona"> </div>
+                <div class="col-6 col-m-5">
+                    <!-- https://westernspirit.com/ -->
+                    <h2>Phoenix, AZ</h2>
+                    <p>&nbsp;</p>
+                    <p>A world-class trail system in the Bradshaw Mountain foothills of central Arizona, the Black
+                        Canyon Trail has been
+                        stretched out to nearly 80 miles of flowy purpose-built singletrack that just begs for a
+                        multi-day trip. The Black
+                        Canyon Trail was designated as a National Recreation Trail in June 2008 and also carries the
+                        prestigious "Epic Trail"
+                        award from the International Mountain Biking Association. </p>
+                    <p>&nbsp;</p>
+                    <p>For more information you can check out this trail on MTB
+                        Project - Black Canyon. This trail is a blast! Rolling downhill with short climbs and quick
+                        turns, you will love the
+                        flow. The mountain views are beautiful and the desert plants amazing. This three-day trip has so
+                        much packed in you'll
+                        feel like you have been gone a week! With direct flights from many cities right into Phoenix,
+                        fitting this mountain bike
+                        getaway into your schedule should be easier than most destination riding vacations.</p>
+                    <p>&nbsp;</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <div class="col-6 col-m-4">
+                    <!-- https://westernspirit.com/ -->
+                    <h2>Prescott, AZ</h2>
+                    <p>&nbsp;</p>
+                    <p>Join MTB Adventures on this incredible five-day and four-night guided mountain bike ride on some
+                        of Arizona's best
+                        trails. Conveniently located between the Bradshaw Mountains and the high desert of northern
+                        Arizona lies miles of
+                        singletrack. This mountain bike destination has a long history of excellent trail construction
+                        amongst an unbelievably
+                        stunning mix of desert and forest scenery. Home to the famous Whiskey 50 Mountain Bike Race,
+                        Prescott Arizona is known
+                        for its flowy and non-technical singletrack. Visit MTB Project to view some of the trails in the
+                        region.</p>
+                    <p>&nbsp;</p>
+                    <p>This mountain bike destination has a long history of excellent trail construction amongst an
+                        unbelievably
+                        stunning mix of desert and forest scenery. Home to the famous Whiskey 50 Mountain Bike Race,
+                        Prescott Arizona is known
+                        for its flowy and non-technical singletrack. Visit MTB Project to view some of the trails in the
+                        region.</p>
+                    <p>&nbsp;</p>
+                </div>
+                <div class="col-6 col-m-8"><img src="http://jdykstra124.mccdgm.net/web105/responsive-media/desert-sunset.jpg" alt="sunset"></div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-4 col-m-5">
+                    <!-- https://westernspirit.com/ -->
+                    <h2>Sedona, AZ</h2>
+                    <p>&nbsp;</p>
+
+                    <p>The mountain biking in Sedona can be best described as technical, scenic and downright fun! The
+                        trails around Sedona
+                        were built by long ago native residents, wildlife, and more recently outdoor enthusiasts like
+                        us. The trails include
+                        miles of scenic terrain including cool oak tree canyons with running water, juniper and pinion
+                        pine forests, slickrock,
+                        rough, rocky, classic desert landscapes. The trails themselves range from well-groomed
+                        singletrack and jeep roads to
+                        some very rough, technical rock shelves. Around each corner you will find a new dramatic vista
+                        and new places to test
+                        your technical singletrack skills.</p>
+                    <p>&nbsp;</p>
+
+                </div>
+                <div class="col-6 col-m-2"> <img src="http://jdykstra124.mccdgm.net/web105/responsive-media/stars.jpg" alt="Stars"> </div>
+                <div class="col-2 col-m-5">
+
+                    <!-- https://westernspirit.com/ -->
+                    <h2>Flagstaff, AZ</h2>
+                    <p>&nbsp;</p>
+                    <p>We start our trip on the Arizona Trail which takes us through beautiful ponderosa forests on the
+                        plateau above the
+                        canyon. Two days in the forest brings us to the edge of the big ditch. On day three, a dramatic
+                        hike into the canyon
+                        offers us a new perspective of this incredible landscape. The riding on this trip is quite
+                        gentle with very little
+                        elevation change, making it a great opportunity to learn about singletrack. We avoid the crowds
+                        along the rim of the
+                        canyon and camp instead in more remote areas which we have all to ourselves. We finish the trip
+                        with a ride along the
+                        West Rim Drive which is closed to vehicles. This gives us a chance to visit many of the classic
+                        viewpoints by bike. The
+                        van is always close at hand on this trip and there is very little climbing. The rolling
+                        singletrack of the Arizona Trail
+                        is a great place for those just getting into mountain biking.</p>
+
+                </div>
+            </div>
+            <!-- end row -->
+        </main>
+        <footer class="row">
+            <div>
+                <h3> &copy; Jon Dykstra 2020 </h3>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
