@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
+
+img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+
+h1,
+h3 {
+    text-align: center;
+}
+
+header {
+    min-height: 100px;
+    padding: 20px;
+    color: black;
+}
+
+footer {
+    background: rgb(7, 70, 121);
+    min-height: 100px;
+    padding: 20px;
+    color: #a4b3e6;
+}
+
+nav {
+    text-align: center;
+}
+
+a {
+    padding: 20px 40px;
+    border-radius: 10px;
+    background: rgb(70, 71, 70);
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 10;
+}
+
+a:hover {
+    background: #757a80;
+    color: black;
+}
+
+.container {
+    max-width: 1260px;
+    margin: 10px auto;
+    border-radius: 10px;
+    text-align: center;
+}
