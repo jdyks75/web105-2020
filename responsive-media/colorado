@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Combined Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* custom styles here! */
+        /* ROWS ARE CRITICAL! THEY RESET THE FLOW OF THE PAGE!!! */
+
+        body {
+            font-family: verdana, sans-serif;
+            background: #7a7e99;
+            background-repeat: no-repeat;
+        }
+
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+
+        }
+
+        /* For mobile phones: */
+
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 630px) {
+
+            /* For tablets: */
+            body {
+                background: #7a7e99;
+            }
+
+            .col-m-1 {
+                width: 8.33%;
+            }
+
+            .col-m-2 {
+                width: 16.66%;
+            }
+
+            .col-m-3 {
+                width: 25%;
+            }
+
+            .col-m-4 {
+                width: 33.33%;
+            }
+
+            .col-m-5 {
+                width: 41.66%;
+            }
+
+            .col-m-6 {
+                width: 50%;
+            }
+
+            .col-m-7 {
+                width: 58.33%;
+            }
+
+            .col-m-8 {
+                width: 66.66%;
+            }
+
+            .col-m-9 {
+                width: 75%;
+            }
+
+            .col-m-10 {
+                width: 83.33%;
+            }
+
+            .col-m-11 {
+                width: 91.66%;
+            }
+
+            .col-m-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+
+            /* For desktop: */
+            body {
+                background-image: url("http://jdykstra124.mccdgm.net/web105/responsive-media/colorado-background.jpg");
+                background-repeat: no-repeat;
+                background-position: top;
+                background-size: 225%;
+            }
+
+
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+            #left-nav {
+                padding-left: 4%;
+            }
+
+            #right-nav {
+                padding-right: 4%;
+            }
+        }
+    </style>
+</head>
+
+<!-- all pictures are from pixabay -->
+
+<body>
+
+    <header>
+        <h1>Colorado</h1>
+    </header>
+
+    <div class="container">
+        <p>&nbsp;</p>
+
+        <nav>
+            <div><a href="index.html">Home</a> </div>
+        </nav>
+        <main>
+            <div class="row">
+                <div class="col-6 col-m-7"> <img
+                        src="http://jdykstra124.mccdgm.net/web105/responsive-media/snow-bike.jpg" alt="Snow"> </div>
+                <div class="col-6 col-m-5">
+                    <!-- https://westernspirit.com/ -->
+                    <h2>Durango, CO</h2>
+                    <p>&nbsp;</p>
+                    <p>Colorado Singletrack is a high alpine, truly backcountry, cycling adventure. Riding alpine
+                        singletrack above tree line
+                        with stunning 360-degree views, we'll travel into the way back for a mountain bike experience
+                        unique to Colorado's high
+                        country. Refreshingly cool mountain summer weather greets us as we start the trip with a ride on
+                        the classic Hermosa
+                        Creek Trail before we meet up with the Colorado Trail, a 500-mile trail that crosses the state.
+                        We ride a 72-mile
+                        section of what Bike Magazine has called the, "nation's premier alpine singletrack." </p>
+                    <p>&nbsp;</p>
+                    <p>On this tour we'll climb stunning
+                        alpine passes, traverse ridge tops that glow with summer wildflowers, and for the finale descend
+                        6,000 feet of
+                        singletrack to the mountain bike happy town of Durango. Colorado Singletrack is designed for
+                        mountain bikers with
+                        singletrack experience who are in peak physical shape. Average mileage of 18 miles a day is
+                        plenty at the 10,000-foot
+                        elevation where the unpredictable weather could make your trip an expedition. The Colorado
+                        Singletrack tour is a guided
+                        mountain bike adventure not to be missed. Up for the challenge? Call us at 555-555-5555. We'll
+                        help you get started
+                        planning this incredible mountain biking experience.</p>
+                    <p>&nbsp;</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <div class="col-6 col-m-4">
+                    <!-- https://westernspirit.com/ -->
+                    <h2>Crested Butte, CO</h2>
+                    <p>&nbsp;</p>
+                    <p>If you are a singletrack aficionado (you've done Sun Valley, Brian Head and even our Colorado
+                        Singletrack) and you STILL
+                        want more, it's time to head to Crested Butte. Bigger peaks, taller wildflowers and more
+                        singletrack than you can ride
+                        in an entire summer. We have created the ultimate Crested Butte itinerary! We pedal right out of
+                        town into the Elk
+                        Mountains which surround Crested Butte. Located at a whopping 8,885 feet, Crested Butte is home
+                        to the Mountain Bike
+                        Hall of Fame and a birthplace of modern mountain biking. .</p>
+                    <p>&nbsp;</p>
+                    <p>Singletrack literally extends in all directions and we have
+                        chosen the most buffed, and the most beautiful, including all the classic rides. True, breathing
+                        is a challenge, but the
+                        views are unrivaled making the effort all worthwhile. This trip requires singletrack experience
+                        and peak physical
+                        condition. Altitudes range from 9,000 to 11,500 feet. This is the real deal, and trust us, it's
+                        amazing. Give us a call
+                        at 555-555-5555. We'll get you lined out on the best that Crested Butte has to offer</p>
+
+                </div>
+                <div class="col-6 col-m-8"><img src="http://jdykstra124.mccdgm.net/web105/responsive-media/mtb-view.jpg"
+                        alt="Point of View"></div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-4 col-m-5">
+                    <!-- https://westernspirit.com/ -->
+                    <h2>Grand Junction, CO</h2>
+                    <p>&nbsp;</p>
+
+                    <p>By now you must have heard of it. The famous Fruita area trails including the rip-roaring loops
+                        above the Colorado
+                        River, Rabbit Valley, and 18 Road. These trails were created through the teamwork of local
+                        cyclists, the Bureau of Land
+                        Management and Over the Edge Sports. They include some great climbs and zippy descents on some
+                        amazing trails such as
+                        the Zion Curtain and the Overlook Trail. Both are big epic rides where you will truly appreciate
+                        the support vehicle.</p>
+                    <p>&nbsp;</p>
+
+                </div>
+                <div class="col-6 col-m-2"> <img src="http://jdykstra124.mccdgm.net/web105/responsive-media/trails.jpg"
+                        alt="Woods"> </div>
+                <div class="col-2 col-m-5">
+
+                    <h2></h2>
+                    <p>The Western Slope of the Rocky Mountains has forever been called, The Real Colorado. Evoking the
+                        dramatic sweep of a
+                        Swiss or Austrian backdrop, this side of The Centennial State hosts the highest number of
+                        14’ers. All that breathtaking
+                        vert has given rise, not only to some extreme skiing destinations, but also some of Colorado’s
+                        most treasured, if not
+                        eclectic mountain towns.</p>
+
+                </div>
+            </div>
+            <!-- end row -->
+        </main>
+        <footer class="row">
+            <div>
+                <h3> &copy; Jon Dykstra 2020 </h3>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
